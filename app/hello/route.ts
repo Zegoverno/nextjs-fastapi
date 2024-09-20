@@ -1,5 +1,7 @@
+import { NextResponse } from 'next/server';
+
 export const dynamic = 'force-static'
- 
+
 export async function GET() {
-  return Response.json({ hello: 'world' })
+  return NextResponse.json({ hello: 'world' })
 }
